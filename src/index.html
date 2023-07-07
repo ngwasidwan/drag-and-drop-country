@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries app</title>
+
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-box">
+        <div class="input-text">
+          <label for="country">Enter country name</label>
+          <div>
+            <input type="text" placeholder="Country Name" id="country" />
+          </div>
+          <p>
+            click-hold and drag the box below 👇 then drop inside the 'drop
+            here' 👉
+          </p>
+          <div
+            class="drag-target"
+            draggable="true"
+            id="draggable-element"
+          ></div>
+        </div>
+      </div>
+
+      <div class="output-container">
+        <div class="output-box">
+          <h2 id="drop-target">Drop here</h2>
+          <div class="spinner"></div>
+        </div>
+        <section class="country-infos-box"></section>
+      </div>
+      <footer>
+        <p>created by Ngwa Sidwan</p>
+      </footer>
+    </div>
+  </body>
+</html>
