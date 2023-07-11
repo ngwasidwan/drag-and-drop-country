@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries app</title>
+
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-box">
+        <div class="history-box">
+          <button class="history-btn invisible">activities</button
+          ><span class="menu">
+            <svg
+              class="add-menu"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#000000"
+                fill-rule="evenodd"
+                d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+              ></path>
+            </svg>
+
+            <svg
+              class="remove-menu invisible"
+              fill="#000000"
+              viewBox="0 0 64 64"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="times"
+                d="M32.033,29.19l15.55,-15.55l2.863,2.863l-15.55,15.55l15.55,15.55l-2.863,2.863l-15.55,-15.55l-15.55,15.55l-2.863,-2.863l15.55,-15.55l-15.55,-15.55l2.863,-2.863l15.55,15.55Z"
+              ></path>
+            </svg>
+            <!-- <span class="menu-text">menu</span> -->
+          </span>
+
+          <ul class="search-list">
+            <!-- <li>cameroon</li> -->
+          </ul>
+        </div>
+        <div class="input-text">
+          <label for="country">enter any country name</label>
+          <div>
+            <input type="text" placeholder="Country Name" id="country" />
+          </div>
+          <p>
+            type country name above ☝️ then click-hold and <br />drag the box
+            below 👇 then drop inside the "drop here" 👉
+          </p>
+          <div
+            class="drag-target"
+            draggable="true"
+            id="draggable-element"
+          ></div>
+        </div>
+      </div>
+
+      <div class="output-container">
+        <div class="output-box">
+          <h2 id="drop-target">Drop here</h2>
+          <div class="spinner"></div>
+        </div>
+        <section class="country-infos-box"></section>
+      </div>
+      <footer>
+        <p>created by Ngwa Sidwan for learning purposes</p>
+      </footer>
+    </div>
+  </body>
+</html>
